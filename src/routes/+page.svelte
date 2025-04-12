@@ -64,11 +64,11 @@
 </script>
 
 <svelte:head>
-  <title>SvelteKit Todo App</title>
+  <title>SvelteKit TaskOnfly beta</title>
 </svelte:head>
 
 <main>
-  <h1>Le Mie Attività</h1>
+  <h1>My To Do List</h1>
   
   <div class="add-task">
     <input 
@@ -104,12 +104,14 @@
   
   h1 {
     text-align: center;
-    color: #333;
+		color: #BBB;
+		text-shadow: 0 0 5px #00fafa;
   }
   
   .add-task {
     display: flex;
-    margin-bottom: 20px;
+		margin-bottom: 20px;
+		gap: 10px;
   }
   
   input {
