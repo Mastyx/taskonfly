@@ -104,7 +104,7 @@
   
   h1 {
     text-align: center;
-		color: #BBB;
+		color: var(--text);
 		text-shadow: 0 0 5px #00fafa;
   }
   
@@ -117,8 +117,8 @@
   input {
     flex: 1;
     padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ddd;
+    font-size: 20px;
+    border: 1px solid var(--border);
     border-radius: 4px 0 0 4px;
   }
   

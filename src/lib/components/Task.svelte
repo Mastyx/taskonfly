@@ -87,16 +87,17 @@
 
 <style>
   .task {
-    background-color: white;
+    background-color: var(--card);
     border-radius: 4px;
     padding: 15px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    transition: all 0.3s ease;
+		transition: all 0.3s ease;
+		color : var(--text);
   }
   
   .completed {
     opacity: 0.7;
-    background-color: #f9f9f9;
+    background-color: var(--card-muted);
   }
   
   .task-header {
@@ -113,7 +114,7 @@
   
   .strike {
     text-decoration: line-through;
-    color: #999;
+    color: var(--text-light);
   }
   
   .task-actions {
@@ -124,8 +125,8 @@
   .task-content {
     margin-top: 10px;
     padding-top: 10px;
-    border-top: 1px solid #eee;
-    color: #666;
+    border-top: 1px solid var(--border);
+    color: var(--text-light);
     white-space: pre-wrap;
   }
   
@@ -139,15 +140,20 @@
     resize: vertical;
     padding: 8px;
     font-family: inherit;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+    border: 1px solid var(--border);
+		border-radius: 4px;
+		font-size: 1.2rem;
+		color : var(--text);
+		background-color: var(--card);
   }
   
   input[type="text"] {
     padding: 8px;
     font-size: 16px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+    border: 1px solid var(--border);
+		border-radius: 4px;
+		background-color: var(--card);
+		color : var(--text);
   }
   
   .edit-buttons {
@@ -204,12 +210,12 @@
     left: 0;
     height: 18px;
     width: 18px;
-    background-color: #eee;
+    background-color: var(--checkbox-bg);
     border-radius: 3px;
   }
   
   .checkbox-container:hover input ~ .checkmark {
-    background-color: #ccc;
+    background-color: var(checkbox-hover);
   }
   
   .checkbox-container input:checked ~ .checkmark {

@@ -6,20 +6,27 @@
   padding: 0;
 }
 
-
 :root {
   --bg: #f5f5f5;
   --text: #222;
+  --text-light: #666;
   --card: #fff;
+  --card-muted: #f0f0f0;
+  --border: #ddd;
+  --checkbox-bg: #eee;
+  --checkbox-hover: #ccc;
 }
 
 [data-theme="dark"] {
   --bg: #1e1e1e;
-  --text: #000;
+  --text: #eee;
+  --text-light: #999;
   --card: #2a2a2a;
+  --card-muted: #2e2e2e;
+  --border: #444;
+  --checkbox-bg: #333;
+  --checkbox-hover: #555;
 }
-
-
 
 .task {
   background-color: var(--card);
@@ -27,7 +34,7 @@
 
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: system-ui, sans-serif;
   line-height: 1.6;
 	background-color: var(--bg);
   color: var(--text);
