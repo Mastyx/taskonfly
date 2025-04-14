@@ -12,15 +12,16 @@
 //
 //export default config;
 //
-
 import adapter from '@sveltejs/adapter-static';
 import preprocess from 'svelte-preprocess';
 
 const config = {
   kit: {
-    adapter: adapter(),
+    adapter: adapter({
+      fallback: 'index.html'
+    }),
     paths: {
-      base: '/taskonfly' // oppure '' se pubblichi su root
+      base: '/taskonfly'
     }
   },
   preprocess: preprocess()
