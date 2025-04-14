@@ -12,18 +12,19 @@
 //
 //export default config;
 //
+
 import adapter from '@sveltejs/adapter-static';
-import { vitePreprocess } from 'sveltekit/vite';
+import preprocess from 'svelte-preprocess';
 
-const dev = process.env.NODE_ENV === 'development';
-
-export default {
-  preprocess: vitePreprocess(),
+const config = {
   kit: {
     adapter: adapter(),
     paths: {
-      base: dev ? '' : '/taskonfly',
-    },
+      base: '/taskonfly' // oppure '' se pubblichi su root
+    }
   },
+  preprocess: preprocess()
 };
+
+export default config;
 

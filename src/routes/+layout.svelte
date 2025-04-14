@@ -1,7 +1,8 @@
 <!-- routes/+layout.svelte -->
 <script>
   import '../app.css';
-  import { theme } from '$lib/stores/theme.js';
+	import { theme } from '$lib/stores/theme.js';
+	
 
   function toggleTheme() {
     theme.update(t => t === 'light' ? 'dark' : 'light');
